@@ -32,7 +32,7 @@ The workspace provided in the SFND classroom comes preinstallated with everythin
 
    ```sh
    cd ~
-   git clone https://github.com/udacity/SFND_Lidar_Obstacle_Detection.git
+   git clone https://github.com/udacity/SFND_Lidar_Obstacle_Detection.git   
    ```
 
 2.  Edit [CMakeLists.txt](https://github.com/udacity/SFND_Lidar_Obstacle_Detection/blob/master/CMakeLists.txt) as follows:
