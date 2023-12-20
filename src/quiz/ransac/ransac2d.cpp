@@ -89,7 +89,7 @@ std::unordered_set<int> Ransac(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, int ma
 		// Measure distance between every point and fitted line
 		for (auto point : cloud->points)
 		{
-			int dist = ((point.x * currA) + (point.y * currB) + currC) / sqrt((currA * currA) + (currB * currB));
+			int dist = (abs((point.x * currA) + (point.y * currB) + currC)) / sqrt((currA * currA) + (currB * currB));
 			if (dist < distanceTol)
 			{
 				currNumOfPoints++;
